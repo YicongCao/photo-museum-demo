@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>照片</title>
+    <style>html,body{background:#000;margin:0}#museum-boot{z-index:10000;color:#e9e4db;box-sizing:border-box;background:#000;place-items:center;padding:24px;font:13px/1.6 system-ui,sans-serif;display:grid;position:fixed;inset:0}#museum-boot *{box-sizing:border-box}.boot-card{width:min(100%,360px)}.boot-emblem{border:1px solid #8c6b3f;border-radius:50%;place-items:center;width:112px;height:112px;margin:0 auto 52px;display:grid}.boot-emblem img{width:54px;height:54px}.boot-row{justify-content:space-between;align-items:baseline;gap:24px;display:flex}.boot-row h1{letter-spacing:.08em;margin:0;font-size:16px;font-weight:400}.boot-row span{color:#b88b4a;font-variant-numeric:tabular-nums;font:12px ui-monospace,monospace}#museum-boot progress{appearance:none;color:#b88b4a;background:#33291c;border:0;width:100%;height:3px;margin:20px 0 14px;display:block}#museum-boot progress::-webkit-progress-bar{background:#33291c}#museum-boot progress::-webkit-progress-value{background:#b88b4a;transition:width .16s}#museum-boot progress::-moz-progress-bar{background:#b88b4a}#museum-boot [data-boot-detail]{color:#a7a198;min-height:22px;margin:0;font-size:12px}#museum-boot .boot-actions{gap:24px;min-height:44px;margin-top:24px;display:flex}#museum-boot a,#museum-boot button{font:inherit;color:#d8ae72;cursor:pointer;background:0 0;border:0;border-bottom:1px solid #74552d;padding:10px 0;text-decoration:none}#museum-boot [hidden]{display:none}#museum-boot a:focus-visible,#museum-boot button:focus-visible{outline-offset:5px;outline:2px solid #d8ae72}#museum-boot[data-failed] progress{opacity:.3}#museum-boot noscript{color:#e6a28d}@media (height<=440px){.boot-emblem{width:72px;height:72px;margin-bottom:20px}}@media (prefers-reduced-motion:reduce){#museum-boot progress::-webkit-progress-value{transition:none}}</style>
+    <script type="module" crossorigin src="/photo-museum-demo/assets/main-DFAXiKkX.js"></script>
+    <link rel="modulepreload" crossorigin href="/photo-museum-demo/assets/loading-mark-CFzjMlfw.js">
+    <link rel="stylesheet" media="print" data-boot-style crossorigin href="/photo-museum-demo/assets/loading-mark-9WAnsu_9.css">
+    <link rel="stylesheet" media="print" data-boot-style crossorigin href="/photo-museum-demo/assets/main-Dn1E6UmO.css">
+  </head>
+  <body>
+    <section id="museum-boot" aria-label="展馆加载">
+      <div class="boot-card">
+        <div class="boot-emblem"><img src="/photo-museum-demo/brand/photo-museum.svg" alt="" width="54" height="54"></div>
+        <div class="boot-row"><h1 data-boot-label role="status">载入展馆界面</h1><span data-boot-count aria-label="当前阶段">01 / 03</span></div>
+        <progress max="3" value="0" aria-label="展馆准备进度"></progress>
+        <p data-boot-detail>首次访问可能需要稍候</p>
+        <div class="boot-actions"><a data-boot-retry href="">重新加载</a><button data-boot-skip hidden>先进入展馆</button></div>
+        <noscript>请启用 JavaScript 后重新加载。</noscript>
+      </div>
+    </section>
+    <div id="root" inert></div>
+    <script src="/photo-museum-demo/assets/museum-boot.js"></script>
+  </body>
+</html>
